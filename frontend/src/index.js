@@ -2,17 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import App from './App';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <div>
-      <h1>
-        Product Management System
-      </h1>
-      <img src="android-chrome-512x512.png" alt="not rendered"/>
-    </div>
-  </React.StrictMode>
+  <BrowserRouter>
+    <App/>
+  </BrowserRouter>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
